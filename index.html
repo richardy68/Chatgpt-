@@ -151,28 +151,6 @@
             100% { left: -75%; }
         }
 
-        /* Systeme.io Branding Footer */
-        .systeme-io-branding {
-            margin-top: 20px; /* Adjusted: Reduced space above branding for desktop */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.85em;
-            color: #777;
-            padding-bottom: 10px; /* Small padding at the very bottom */
-        }
-
-        .systeme-io-branding img {
-            height: 18px; /* Adjust as needed for logo size */
-            margin-right: 5px;
-            box-shadow: none; /* Remove shadow if inherited */
-            border: none; /* Remove border if inherited */
-            margin-top: 0; /* Reset margins */
-            margin-bottom: 0; /* Reset margins */
-            border-radius: 0; /* Reset border-radius */
-        }
-
-
         /* Responsive Adjustments */
         @media (max-width: 500px) {
             body {
@@ -206,8 +184,9 @@
                 margin-top: 15px; /* Adjusted for mobile */
                 margin-bottom: 15px; /* Adjusted for mobile */
             }
-            .systeme-io-branding {
-                margin-top: 8px; /* Adjusted: Reduced space above branding for mobile */
+            /* Hide the second button specifically on mobile */
+            .btn-primary:last-of-type {
+                display: none;
             }
         }
     </style>
@@ -222,20 +201,17 @@
 
         <div class="content-area">
             <h1>SAY GOODBYE TO SURVEYS</h1>
-            <p class="sub-headline">This website pays you daily doing little tasks from home 🤑🤑</p>
+            <p class="sub-headline">This website pays you $100 daily doing little tasks from home</p>
 
             <a href="https://jeansmary68.systeme.io/offerpage/error" class="btn-primary">Join Now & Start!</a>
 
             <img src="https://i.postimg.cc/rwFYS1dV/IMG-20250324-161947-614.jpg" alt="Earnings Dashboard Screenshot">
 
-            </div>
+            <a href="https://jeansmary68.systeme.io/offerpage/error" class="btn-primary">Start Earning Now</a>
+
+        </div>
     </div>
     
-    <div class="systeme-io-branding">
-        <img src="https://app-cdn.systeme.io/images/site/powered_by_icon_light.svg" alt="Systeme.io Logo">
-        <span>Powered by systeme.io</span>
-    </div>
-
     <script>
         // Real-time clock script (unchanged)
         function updateClock() {
