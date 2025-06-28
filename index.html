@@ -159,11 +159,16 @@
 
         /* Responsive Adjustments */
         @media (max-width: 500px) {
+            body {
+                padding: 0; /* Keep body padding 0, the container margin will expose background */
+            }
             .container {
                 padding: 30px 20px;
-                width: 100%;
-                margin: 0 auto;
-                min-height: 100vh;
+                width: calc(100% - 40px); /* 100% minus 20px margin on each side */
+                margin: 20px auto; /* 20px top/bottom margin, auto left/right to center */
+                border-radius: 15px; /* Re-add border-radius for the blue edge look */
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Re-add shadow for the blue edge look */
+                min-height: calc(100vh - 40px); /* Adjust min-height to account for top/bottom margin */
             }
             .mobile-status-bar {
                 /* No border-radius changes needed, as container is already 0 */
@@ -180,6 +185,7 @@
                 font-size: 1.1em;
                 padding: 12px 25px;
             }
+            /* Image and Wistia embed still full width within the container's padding */
         }
     </style>
 </head>
