@@ -20,7 +20,7 @@
         .container {
             max-width: 768px; /* Increased max-width for fuller page */
             width: 90%; /* Set width to 90% of viewport */
-            margin: 15px auto; /* Adjusted: Reduced top/bottom margin to expand vertically */
+            margin: 20px auto; /* Centered horizontally with vertical margin */
             background-color: #ffffff;
             /* Default desktop styling for border-radius and box-shadow */
             border-radius: 0; /* Confirmed: No rounded corners as requested */
@@ -30,7 +30,7 @@
             box-sizing: border-box;
             position: relative;
             overflow: hidden;
-            min-height: calc(100vh - 30px); /* Adjusted: Account for new margin */
+            min-height: calc(100vh - 40px); /* Ensure container fills viewport minus margin */
         }
 
         /* Header (mimicking mobile status bar) */
@@ -154,7 +154,7 @@
         /* Responsive Adjustments */
         @media (max-width: 500px) {
             body {
-                padding: 10px; /* Adjusted: Reduced body padding to expand container on mobile */
+                padding: 15px; /* Adjusted: Reduced padding on body to make card wider */
             }
             .container {
                 padding: 20px 10px; /* Confirmed: Reduced horizontal padding for mobile image expansion */
@@ -162,7 +162,7 @@
                 margin: 0 auto; /* Center within the padded body */
                 border-radius: 0; /* Confirmed: No rounded corners for mobile */
                 box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Re-add shadow for mobile */
-                min-height: calc(100vh - 20px); /* Adjusted: Account for new body padding */
+                min-height: calc(100vh - 30px); /* Adjusted: Account for 15px top/bottom body padding */
             }
             .mobile-status-bar {
                 /* No border-radius changes needed, as container is already 0 */
